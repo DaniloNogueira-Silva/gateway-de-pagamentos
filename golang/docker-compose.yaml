@@ -4,4 +4,6 @@ services:
   app:
     build: .
     volumes:
-      - .:/go/src
+      - .:/go/src/
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
